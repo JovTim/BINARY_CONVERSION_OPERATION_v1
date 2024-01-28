@@ -45,6 +45,22 @@ def hexasplitter(value):
     
     return number1, number2
 
+def decimalsplitter(value):
+    x = ''
+    y = ''
+    
+    for i in range(len(value)):
+        if value[i] == '.':
+            for j in value[i:]:
+                y += j
+            break
+        x += value[i]
+        
+    if (x and y):
+        return int(x), float(y)
+    else:
+        return int(x), 0
+
 """
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣤⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀ 
 ⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⡿⠛⠉⠙⠛⠛⠛⠛⠻⢿⣿⣷⣤⡀⠀⠀⠀⠀⠀ 
