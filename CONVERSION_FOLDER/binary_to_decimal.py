@@ -1,6 +1,6 @@
 from splitter import splitter
 
-user = "1010.111"
+user = "1001011.000110011"
 
 def binary_to_decimal(binary):
     numb1, numb2 = splitter(binary)
