@@ -19,7 +19,7 @@ def decimal_to_octal(decimal):
     # fraction
 
     samp2 = []
-    for a in range(3): # range of the decimal point
+    for a in range(24): # range of the decimal point
         num = fraction * 8
         k = str(num)
         l = samp2.append(k[0])
