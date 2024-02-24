@@ -18,7 +18,7 @@ def decimal_to_binary(value):
         remainder += str(x)
 
     fraction_container = []
-    for a in range(24): # range of the decimal point
+    for a in range(24): # range of decimal point
         num = fraction * 2
         k = str(num)
         l = fraction_container.append(k[0])

@@ -60,6 +60,21 @@ def decimalsplitter(value):
         return int(x), float(y)
     else:
         return int(x), 0
+    
+def hex_replacer(value):
+    hexadecimal_v2 = {
+        10: 'A',
+        11: 'B',
+        12: 'C',
+        13: 'D',
+        14: 'E',
+        15: 'F'
+    }
+
+    if value in hexadecimal_v2:
+        return hexadecimal_v2[value]
+    else:
+        return value
 
 """
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣤⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀ 
