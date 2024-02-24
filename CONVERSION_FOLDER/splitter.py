@@ -75,6 +75,16 @@ def hex_replacer(value):
         return hexadecimal_v2[value]
     else:
         return value
+    
+def whole_splitter(value):
+    h = ""
+    for i in value:
+        if i == '.':
+            return h
+        h += i
+    return h
+
+
 
 """
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣤⣤⣤⣤⣤⣤⣤⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀ 
