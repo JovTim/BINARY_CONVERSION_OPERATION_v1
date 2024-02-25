@@ -1,7 +1,6 @@
-user = '00101110111.0100'
+user = '011011011100.01100'
 
 def counter(value):
-
     i = 0
 
     if '.' in value:
@@ -16,7 +15,6 @@ def counter(value):
                 continue
             binary += j
         return binary, i
-
     else:
         return value, i
 
@@ -31,44 +29,32 @@ def twoscomplement(value):
         i -= 1
 
     if i == -1:
-        return '1' + binary
-    
-    k = i - 1
-    while k >= 0:
-        if binary[k] == '1':
-            binary = list(binary)
-            binary[k] = '0'
-            binary = ''.join(binary)
-        else:
-            binary = list(binary)
-            binary[k] = '1'
-            binary = ''.join(binary)
-        
-        k -= 1
-    
-    return binary, position
+        return '1' + binary, position
+    else:
+        k = i - 1
+        while k >= 0:
+            if binary[k] == '1':
+                binary = list(binary)
+                binary[k] = '0'
+                binary = ''.join(binary)
+            else:
+                binary = list(binary)
+                binary[k] = '1'
+                binary = ''.join(binary)
+            k -= 1
+
+        return binary, position
 
 def final_phase(value):
     binary, position = twoscomplement(value)
 
-    if position == 0:
+    if position == 0 and '.' not in binary:
         return binary
-
     else:
-
-        container = []
-
-        for i in binary:
-            container.append(i)
-
+        container = list(binary)
         container.insert(-position + 1, '.')
 
-        new_binary = ''
-
-        for j in container:
-            new_binary += j
-
+        new_binary = ''.join(container)
         return new_binary
-
 
 print(final_phase(user))
