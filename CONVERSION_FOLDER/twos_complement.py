@@ -1,4 +1,4 @@
-user = '011011011100.01100'
+#user = '011011011100.01100'
 
 def counter(value):
     i = 0
@@ -57,7 +57,7 @@ def final_phase(value):
         new_binary = ''.join(container)
         return new_binary
 
-print(final_phase(user))
+#print(final_phase(user))
 
 """
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀

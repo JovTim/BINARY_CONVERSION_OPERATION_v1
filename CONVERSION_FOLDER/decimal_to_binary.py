@@ -1,6 +1,6 @@
 from splitter import decimalsplitter
 
-user = "75.10"
+#user = "75.10"
 
 def decimal_to_binary(value):
     whole, fraction = decimalsplitter(value)
@@ -36,4 +36,4 @@ def decimal_to_binary(value):
 
     return str(output)
 
-print(decimal_to_binary(user))
+#print(decimal_to_binary(user))
