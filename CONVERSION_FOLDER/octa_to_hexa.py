@@ -131,7 +131,7 @@ def final_phase(octal):
 
     return whole + fraction
 
-print(final_phase(user))
+#print(final_phase(user))
 #print(octal_to_hexa_phase2(user))
 
 """
