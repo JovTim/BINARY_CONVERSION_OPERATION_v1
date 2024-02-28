@@ -19,6 +19,6 @@ def hexa_to_decimal(hexa):
         return whole
 
 
-print(hexa_to_decimal('3A4.1B'))
+#print(hexa_to_decimal('3A4.1B'))
 
 

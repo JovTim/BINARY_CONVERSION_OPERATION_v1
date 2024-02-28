@@ -1,5 +1,5 @@
 from splitter import decimalsplitter, hex_replacer, whole_splitter
-user = "123.54"
+#user = "123.54"
 
 def decimal_to_hexa(value):
     whole, fraction = decimalsplitter(value)
@@ -37,4 +37,4 @@ def decimal_to_hexa(value):
     return str(output)
 
 
-print(decimal_to_hexa(user))
+#print(decimal_to_hexa(user))

@@ -53,8 +53,7 @@ def signed_hex(value):
                     final_fraction += f
     
     binary = final_whole + final_fraction
-    binary = '1111' + binary
-    print(f"BINARY: {binary}")
+    print(f"BINARY: {'1111' + binary}")
 
     #-------------SIGNED DECIMAL--------------
     x = final_phase(binary)
@@ -104,7 +103,7 @@ def signed_hex(value):
         a = binary_to_decimal(j)
         octal_fraction += str(a)
 
-    print(f"OCTAL: 77777777{octal_whole + octal_fraction}")
+    print(f"OCTAL: {octal_whole + octal_fraction}")
 
 
 

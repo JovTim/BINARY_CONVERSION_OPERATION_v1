@@ -20,4 +20,4 @@ def octal_to_decimal(octal):
             whole += numb1[-a] * (8 ** (a - 1))
         return whole 
 
-print(octal_to_decimal(user))
+#print(octal_to_decimal(user))

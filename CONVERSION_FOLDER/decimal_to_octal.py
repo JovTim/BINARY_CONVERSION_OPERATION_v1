@@ -1,5 +1,5 @@
 from splitter import decimalsplitter
-user = '56.3'
+user = '39.375'
 def decimal_to_octal(decimal):
     whole, fraction = decimalsplitter(decimal)
 
@@ -37,5 +37,5 @@ def decimal_to_octal(decimal):
 
     return str(output)
 
-print(decimal_to_octal(user))
+#print(decimal_to_octal(user))
 
