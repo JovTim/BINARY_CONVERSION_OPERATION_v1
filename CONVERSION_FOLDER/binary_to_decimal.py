@@ -1,6 +1,6 @@
 from splitter import splitter
 
-user = "1001011.000110011"
+#user = "1001011.000110011"
 
 def binary_to_decimal(binary):
     numb1, numb2 = splitter(binary)
@@ -18,4 +18,4 @@ def binary_to_decimal(binary):
             whole += numb1[-a] * (2 ** (a - 1))
         return whole
 
-print(binary_to_decimal(user))
+#print(binary_to_decimal(user))
