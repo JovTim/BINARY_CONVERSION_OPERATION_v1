@@ -31,7 +31,6 @@ def decimal_to_binary(value):
     for b in fraction_container:
         last += b
 
-
     output = int(remainder) + float(last)
 
     return str(output)

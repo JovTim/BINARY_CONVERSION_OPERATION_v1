@@ -2,7 +2,7 @@ from splitter import splitter, hex_replacer
 from octa_to_hexa import octal_to_hexa_phase1
 from twos_complement import final_phase
 from binary_to_decimal import binary_to_decimal
-user = "71.5"
+user = "36.51"
 
 def signed_octal(value):
     #------------SIGNED BINARY--------------

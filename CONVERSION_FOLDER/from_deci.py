@@ -3,7 +3,7 @@ from twos_complement import final_phase
 from splitter import splitter, hex_replacer
 from binary_to_decimal import binary_to_decimal
 
-user = '-20.5'
+user = '-33.125'
 
 def signed_deci(value):
     decimal = ""
