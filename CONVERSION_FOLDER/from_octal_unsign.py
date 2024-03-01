@@ -9,6 +9,6 @@ def unsign_octal(value):
     print(f"DECIMAL: {value_2}")
     value_3 = decimal_to_binary(value_2)
     print(f"BINARY: {value_3}")
-    print(f"HEXADECIMAL: {final_phase(value)}") #medyo buggy
+    print(f"HEXADECIMAL: {final_phase(value)}")
 
-unsign_octal(user)
+#unsign_octal(user)

@@ -105,4 +105,4 @@ def signed_binary(value):
 
 
 
-signed_binary(user)
+#signed_binary(user)

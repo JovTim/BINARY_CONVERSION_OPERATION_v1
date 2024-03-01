@@ -3,7 +3,7 @@ from decimal_to_octal import decimal_to_octal
 from octa_to_hexa import final_phase
 
 
-user = '100111.011'
+#user = '100111.011'
 def unsign_binary(value):
     print(f"DECIMAL: {binary_to_decimal(value)}")
     value_2 = str(binary_to_decimal(value))
@@ -13,4 +13,4 @@ def unsign_binary(value):
     
 
 
-unsign_binary(user)
+#unsign_binary(user)
