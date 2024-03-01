@@ -8,8 +8,9 @@ def unsign_binary(value):
     print(f"DECIMAL: {binary_to_decimal(value)}")
     value_2 = str(binary_to_decimal(value))
     print(f"OCTAL: {decimal_to_octal(value_2)}")
-    value_3 = str(final_phase(value_2))
-    print(f"HEXADECIMAL: {value_3}")
+    value_3 = decimal_to_octal(value_2)
+    value_4 = final_phase(value_3)
+    print(f"HEXADECIMAL: {value_4}")
     
 
 
