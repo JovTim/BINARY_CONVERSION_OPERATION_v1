@@ -24,7 +24,7 @@ def binary_conversion_menu():
         print("[2] DECIMAL")
         print("[3] OCTAL")
         print("[4] HEXADECIMAL")
-        print("[5] EXIT (GO BACK TO MAIN MENU)")
+        print("[5] EXIT (GO BACK TO MAIN MENU)\n")
 
         choice = input("\nEnter your choice: ")
         system('cls')
@@ -44,44 +44,44 @@ def binary_conversion_menu():
             user = input('\n\nEnter BINARY: ')
             if setting == 'unsign':
                 unsign_binary(user)
-                stop = input('\nPress to continue...  ')
+                stop = input('\nEnter to continue...  ')
 
             elif setting == 'sign':
                 signed_binary(user)
-                stop = input('\nPress to continue...  ')
+                stop = input('\nEnter to continue...  ')
             
             system('cls')
         elif choice == '2':
             user = input('\n\nEnter DECIMAL: ')
             if setting == 'unsign':
                 unsign_deci(user)
-                stop = input('\nPress to continue...  ')
+                stop = input('\nEnter to continue...  ')
 
             elif setting == 'sign':
                 signed_deci(user)
-                stop = input('\nPress to continue...  ')
+                stop = input('\nEnter to continue...  ')
             system('cls')
 
         elif choice == '3':
             user = input('\n\nEnter OCTAL: ')
             if setting == 'unsign':
                 unsign_octal(user)
-                stop = input('\nPress to continue...  ')
+                stop = input('\nEnter to continue...  ')
 
             elif setting == 'sign':
                 signed_octal(user)
-                stop = input('\nPress to continue...  ')
+                stop = input('\nEnter to continue...  ')
             system('cls')
 
         elif choice == '4':
             user = input('\n\nEnter HEXADECIMAL: ')
             if setting == 'unsign':
                 unsign_hexa(user)
-                stop = input('\nPress to continue...  ')
+                stop = input('\nEnter to continue...  ')
 
             elif setting == 'sign':
                 signed_hex(user)
-                stop = input('\nPress to continue...  ')
+                stop = input('\nEnter to continue...  ')
             system('cls')
 
         elif choice == '5':
@@ -100,9 +100,7 @@ def binary_operation_menu():
         print("[3] MULTIPLICATION")
         print("[4] DIVISION")
         print("[5] TWO'S COMPLEMENT")
-        print("[6] EXIT (GO BACK TO MAIN MENU)")
-        print()
-        print()
+        print("[6] EXIT (GO BACK TO MAIN MENU)\n")
 
         choice = input("Enter your choice: ")
         system('cls')
@@ -113,7 +111,7 @@ def binary_operation_menu():
             user2 = input("Enter Second Number: ")
 
             print(f"ADDITION OUTPUT: {bin_addition(user1, user2)}")
-            close = input("Enter to continue... ")
+            close = input("\nEnter to continue... ")
             system('cls')
         
 
@@ -123,7 +121,7 @@ def binary_operation_menu():
             user2 = input("Enter Second Number: ")
 
             print(f"SUBRACTION OUTPUT: {bin_subtraction(user1, user2)}")
-            close = input("Enter to continue... ")
+            close = input("\nEnter to continue... ")
             system('cls')
 
         elif choice == '3':
@@ -132,7 +130,7 @@ def binary_operation_menu():
             user2 = input("Enter Second Number: ")
 
             print(f"MULTIPLICATION OUTPUT: {bin_multiplication(user1, user2)}")
-            close = input("Enter to continue... ")
+            close = input("\nEnter to continue... ")
             system('cls')
 
         elif choice == '4':
@@ -141,7 +139,7 @@ def binary_operation_menu():
             user2 = input("Enter Second Number: ")
 
             print(f"DIVISION OUTPUT: {bin_division(user1, user2)}")
-            close = input("Enter to continue... ")
+            close = input("\nEnter to continue... ")
             system('cls')
 
         elif choice == '5':
@@ -149,7 +147,7 @@ def binary_operation_menu():
             user = input("Enter Binary: ")
 
             print(f'TWO COMPLEMENT OUTPUT: {final_phase(user)}')
-            close = input("Enter to continue... ")
+            close = input("\nEnter to continue... ")
             system('cls')
 
         elif choice == '6':
@@ -162,10 +160,10 @@ def binary_operation_menu():
 
 def main_menu():
     while True:
-        print("\nMAIN MENU")
+        print("MAIN MENU")
         print("[1] BINARY CONVERSION")
         print("[2] BINARY OPERATION")
-        print("[3] EXIT (CLOSES THE PROGRAM)")
+        print("[3] EXIT (CLOSES THE PROGRAM)\n")
 
         choice = input("Enter your choice: ")
         system('cls')
