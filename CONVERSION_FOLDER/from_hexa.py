@@ -53,7 +53,7 @@ def signed_hex(value):
                     final_fraction += f
     
     binary = final_whole + final_fraction
-    print(f"BINARY: {'1111' + binary}")
+    print(f"BINARY: {binary}")
 
     #-------------SIGNED DECIMAL--------------
     x = final_phase(binary)

@@ -48,8 +48,12 @@ def binary_conversion_menu():
                 stop = input('\nEnter to continue...  ')
 
             elif setting == 'sign':
-                signed_binary(user)
-                stop = input('\nEnter to continue...  ')
+                if bin_sign_check(user):
+                    signed_binary(user)
+                    stop = input('\nEnter to continue...  ')
+                else:
+                    print('Signed binary must start with 1')
+                    stop = input('\nEnter to continue...  ')
             
             system('cls')
         elif choice == '2':
@@ -59,8 +63,13 @@ def binary_conversion_menu():
                 stop = input('\nEnter to continue...  ')
 
             elif setting == 'sign':
-                signed_deci(user)
-                stop = input('\nEnter to continue...  ')
+                if dec_sign_check(user):
+                    signed_deci(user)
+                    stop = input('\nEnter to continue...  ')
+                else:
+                    print('Signed decimal must start with negative sign')
+                    stop = input('\nEnter to continue...  ')
+
             system('cls')
 
         elif choice == '3':
@@ -70,8 +79,12 @@ def binary_conversion_menu():
                 stop = input('\nEnter to continue...  ')
 
             elif setting == 'sign':
-                signed_octal(user)
-                stop = input('\nEnter to continue...  ')
+                if oct_sign_check(user):
+                    signed_octal(user)
+                    stop = input('\nEnter to continue...  ')
+                else:
+                    print('Signed octal must start with 7')
+                    stop = input('\nEnter to continue...  ')
             system('cls')
 
         elif choice == '4':
@@ -81,8 +94,12 @@ def binary_conversion_menu():
                 stop = input('\nEnter to continue...  ')
 
             elif setting == 'sign':
-                signed_hex(user)
-                stop = input('\nEnter to continue...  ')
+                if hex_sign_check(user):
+                    signed_hex(user)
+                    stop = input('\nEnter to continue...  ')
+                else:
+                    print('Signed hexadecimal must start with F')
+                    stop = input('\nEnter to continue...  ')
             system('cls')
 
         elif choice == '5':
@@ -156,7 +173,6 @@ def binary_operation_menu():
 
         else:
             system('cls')
-
 
 def main_menu():
     while True:
