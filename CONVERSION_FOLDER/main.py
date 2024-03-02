@@ -17,7 +17,7 @@ from twos_complement import final_phase
 def binary_conversion_menu():
     setting = 'unsign'
     while True:
-        print("\n\n\nBINARY CONVERSION")
+        print("BINARY CONVERSION")
         print(f'CURRENT SETTING: {setting}')
         print("[*] CHANGE UNSIGN OR SIGN")
         print("[1] BINARY")
@@ -90,11 +90,11 @@ def binary_conversion_menu():
         
 
         else:
-            print("\nInvalid choice. Please enter a valid option.")
+            system('cls')
 
 def binary_operation_menu():
     while True:
-        print("\nBINARY OPERATION")
+        print("BINARY OPERATION")
         print("[1] ADDITION")
         print("[2] SUBTRACTION")
         print("[3] MULTIPLICATION")
@@ -157,7 +157,6 @@ def binary_operation_menu():
             break 
 
         else:
-            print("Invalid choice. Please enter a valid option.")
             system('cls')
 
 
@@ -182,7 +181,8 @@ def main_menu():
             exit()
 
         else:
-            print("Invalid choice. Please enter a valid option.")
+            system('cls')
+
 
 
 if __name__ == "__main__":
