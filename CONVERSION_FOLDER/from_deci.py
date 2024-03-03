@@ -13,7 +13,7 @@ def signed_deci(value):
         decimal += i
 
     x = decimal_to_binary(decimal)
-    deci = final_phase(x) # signed binary
+    deci = '1111' + final_phase(x) # signed binary
     # try pa mag add ng 1111 sa dulo
     print(f"Binary: {deci}")
     #return x, deci

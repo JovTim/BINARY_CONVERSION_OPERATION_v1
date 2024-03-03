@@ -9,7 +9,7 @@ def signed_binary(value):
     x = final_phase(value)
     decimal = binary_to_decimal(x)
 
-    binary = value
+    binary = '111' + value
 
     #return "-" + str(decimal), binary
     print(f"DECIMAL: -{decimal}")
